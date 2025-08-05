@@ -6,4 +6,4 @@ branding:
   icon: activity
 runs:
   using: "docker"
-  main: "Dockerfile"
+  image: "Dockerfile"
