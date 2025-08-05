@@ -1,6 +1,9 @@
 name: Tell a Joke Action
 author: Arnab Sau
 description: A GitHub Action that tells a random programming joke.
+branding:
+  color: blue
+  icon: activity
 jobs:
   print:
     name: Print
