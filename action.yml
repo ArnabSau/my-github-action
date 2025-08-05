@@ -1,9 +1,9 @@
-name: Tell a Joke Action
-author: Arnab Sau
-description: A GitHub Action that tells a random programming joke.
+name: "Tell a Joke Action"
+author: "Arnab Sau"
+description: "A GitHub Action that tells a random programming joke."
 branding:
   color: blue
   icon: activity
 runs:
-  using: "python"
-  main: "src/main.py"
+  using: "docker"
+  main: "Dockerfile"
