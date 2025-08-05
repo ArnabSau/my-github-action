@@ -4,22 +4,6 @@ description: A GitHub Action that tells a random programming joke.
 branding:
   color: blue
   icon: activity
-jobs:
-  print:
-    name: Print
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.12'
-      
-      - name: Install dependencies
-        run: |
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      
-      - name: Run python file
-        run: python3 src/main.py
+runs:
+  using: "python"
+  main: "src/main.py"
